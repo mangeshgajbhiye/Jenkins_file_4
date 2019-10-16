@@ -16,7 +16,7 @@ pipeline {
            } 
          stage('Deployment') {
                  steps {
-                     sh 'sshpass -p "123456" scp target/testPro.war mangesh@172.17.0.1:/home/mangesh/Software/apache-tomcat-8.5.43/webapps'
+                     sh 'sshpass -p "123456" scp target/testPro.war mangesh@10.0.2.15:/home/mangesh/Software/apache-tomcat-8.5.43/webapps'
                   }
          }
       }
